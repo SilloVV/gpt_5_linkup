@@ -103,7 +103,7 @@ def get_gpt5_response_with_sources(question, conversation_history=None):
             model="gpt-5",
             input=f"Question: {question}\nTool results: {tool_results[0]}\nProvide a complete answer using this information.",
             text={"verbosity": "medium"},
-            instructions="Vous êtes un assistant juridique spécialisé dans le droit français. Répondez de manière précise, professionnelle et détaillée. Citez toujours les articles de loi pertinents avec leurs références exactes. Structurez vos réponses avec des titres clairs. Adaptez votre niveau de langage à l'interlocuteur tout en restant rigoureux juridiquement. Si une question sort de votre domaine d'expertise juridique, redirigez vers les bonnes ressources. Utilisez un ton bienveillant mais autoritaire sur les questions de droit.Répond en format markdown."
+            instructions="Vous êtes un assistant juridique spécialisé dans le droit français. Répondez de manière précise, professionnelle et détaillée. Citez toujours les articles de loi pertinents avec leurs titres exacts. Structurez vos réponses avec des titres clairs sous format Markdown. Restez rigoureux juridiquement. Si une question sort de votre domaine d'expertise juridique, redirigez vers les bonnes ressources. Utilisez un ton bienveillant mais autoritaire sur les questions de droit."
         )
         
         output_text = ""  # Reset to get only the follow-up response

@@ -1,0 +1,26 @@
+// Diagramme vertical pour un homme
+digraph diagramme_homme {
+	rankdir=TB splines=ortho
+	node [fillcolor=lightblue shape=box style="rounded,filled"]
+	A [label=Homme]
+	node [fillcolor=lightgrey]
+	B [label="Caractéristiques Physiques"]
+	C [label="Compétences"]
+	D [label="Intérêts"]
+	A -> B
+	A -> C
+	A -> D
+	node [fillcolor=honeydew shape=ellipse]
+	B1 [label="Cheveux bruns"]
+	B2 [label="Yeux marron"]
+	C1 [label=Programmation]
+	C2 [label="Analyse de données"]
+	D1 [label=Lecture]
+	D2 [label="Randonnée"]
+	B -> B1
+	B -> B2
+	C -> C1
+	C -> C2
+	D -> D1
+	D -> D2
+}
